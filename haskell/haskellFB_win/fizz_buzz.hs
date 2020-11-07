@@ -1,6 +1,7 @@
 --runs through a set of numbers
 --and prints Fizz if divisible by 3
 --Buzz if divible by 5 and FizzBuzz when divisble by both
+--run in command line
 
 fbAppendValue :: Int -> String
 fbAppendValue x
@@ -10,8 +11,7 @@ fbAppendValue x
     |otherwise = show x
 
 fizzBuzz :: String -> [String]
-fizzBuzz x 
-    | otherwise = map(fbAppendValue) inputList
+fizzBuzz x = map(fbAppendValue) inputList
     where inputList = [1..(read(x) :: Int)]
 
 main :: IO ()
@@ -19,4 +19,3 @@ main = do
     putStrLn "Hello. Please input the max number for your fizzbuzz"
     numberToFB <- getLine
     mapM_ print (fizzBuzz numberToFB)
-

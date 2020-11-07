@@ -1,6 +1,7 @@
 --runs through a set of numbers
 --and prints Fizz if divisible by 3
 --Buzz if divible by 5 and FizzBuzz when divisble by both
+--run in command line
 
 fbAppendValue :: Int -> String
 fbAppendValue x
